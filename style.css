@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+:root {
+  --color-viota: #6833e4;
+  --color-viota2: #734bd1;
+  --color-pink03: rgba(253, 31, 205, 0.205);
+  --color-darkness: #202024;
+  --color-darkness2: #2d2d35;
+  --color-exclamation: rgb(250, 188, 19);
+}
+
+body {
+  background: #121214;
+}
+
+.header {
+  background: var(--color-darkness);
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  font-size: 1.4rem;
+  margin: 0.5rem;
+  color: white;
+}
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.menu a {
+  color: white;
+  padding: 0.5rem;
+  background: var(--color-viota);
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.menu a:hover {
+  background: var(--color-viota2);
+}
+
+.biografia li {
+  list-style: none;
+}
+
+.biografia {
+  margin: 4rem;
+}
+
+.biografia li a {
+  margin: 1.5rem auto;
+  background: var(--color-darkness);
+  color: white;
+  padding: 1rem;
+  display: block;
+  font-size: 1.4rem;
+  width: 30%;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+.biografia li a:hover {
+  background: var(--color-darkness2);
+  transform: translateY(-5px);
+}
+
+.director {
+  color: #fff;
+  display: flex;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--color-darkness);
+  color: white;
+}
+
+.director span {
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  .biografia li a {
+    width: 100%;
+  }
+}
